@@ -26,7 +26,8 @@ public class RSACrypto {
         KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
         keyGen.initialize(2048); // Tamanho da chave
         KeyPair pair = keyGen.generateKeyPair();
-
+        System.out.println("Par de chaves RSA gerado - Chave Publica: " + pair.getPublic());
+        System.out.println("Par de chaves RSA gerado - Chave Privada: " + pair.getPrivate());
         // Criptografando os dados
         String encryptedData = encrypt(originalData, pair.getPublic());
         System.out.println("Dados Criptografados com RSA: " + encryptedData);

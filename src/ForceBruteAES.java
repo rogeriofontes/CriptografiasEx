@@ -37,7 +37,7 @@ public class ForceBruteAES {
     }
 
     public static void main(String[] args) {
-        String encryptedData = "SUA_DATA_CRIPTOGRAFADA_AQUI"; // Coloque aqui o dado criptografado
+        String encryptedData = "A Seguranca é o melhor conhecimento"; // Coloque aqui o dado criptografado
         String knownPart = "Seguranca"; // Parte conhecida do texto original
 
         bruteForce(encryptedData, knownPart);
